@@ -1,0 +1,2078 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.2">
+    <description></description>
+    <groupId>PIE</groupId>
+    <name>FTP-S3</name>
+    <snippet>
+        <processGroups>
+            <id>2e45c2c4-ae22-32f1-0000-000000000000</id>
+            <parentGroupId>6ab0bace-bf5e-3649-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <comments></comments>
+            <contents>
+                <connections>
+                    <id>2d832639-7295-3e25-0000-000000000000</id>
+                    <parentGroupId>2e45c2c4-ae22-32f1-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>b9a1f634-b6eb-368b-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>13a2c412-e4f0-3e7c-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>79db2c77-da8e-3095-0000-000000000000</id>
+                    <parentGroupId>2e45c2c4-ae22-32f1-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <bends>
+                        <x>193.32673263549805</x>
+                        <y>564.2141799926758</y>
+                    </bends>
+                    <destination>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>27d0d501-3180-356b-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>reject</selectedRelationships>
+                    <source>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>04c2bea6-8179-3242-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>8860decb-96c4-318e-0000-000000000000</id>
+                    <parentGroupId>2e45c2c4-ae22-32f1-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>9ce25829-294e-3556-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>f5416037-f600-3ec1-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>a6a320f9-eafc-3724-0000-000000000000</id>
+                    <parentGroupId>2e45c2c4-ae22-32f1-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <bends>
+                        <x>105.32673263549805</x>
+                        <y>484.2141799926758</y>
+                    </bends>
+                    <destination>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>27d0d501-3180-356b-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>0</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>04c2bea6-8179-3242-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>ab97c680-0d00-3a02-0000-000000000000</id>
+                    <parentGroupId>2e45c2c4-ae22-32f1-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <bends>
+                        <x>488.82673263549805</x>
+                        <y>240.71417999267578</y>
+                    </bends>
+                    <destination>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>4303260d-288c-3fce-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>failure</selectedRelationships>
+                    <source>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>f15436f0-1322-39d0-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>c9096976-0cce-3b96-0000-000000000000</id>
+                    <parentGroupId>2e45c2c4-ae22-32f1-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <bends>
+                        <x>-65.17326736450195</x>
+                        <y>360.7141799926758</y>
+                    </bends>
+                    <destination>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>27d0d501-3180-356b-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>failure</selectedRelationships>
+                    <source>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>04c2bea6-8179-3242-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>e7c887bb-deba-3a79-0000-000000000000</id>
+                    <parentGroupId>2e45c2c4-ae22-32f1-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>f15436f0-1322-39d0-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>b9a1f634-b6eb-368b-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>e93e4e1a-ff72-3f0c-0000-000000000000</id>
+                    <parentGroupId>2e45c2c4-ae22-32f1-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>04c2bea6-8179-3242-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>9ce25829-294e-3556-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>fa9331c2-df3d-32ae-0000-000000000000</id>
+                    <parentGroupId>2e45c2c4-ae22-32f1-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>4303260d-288c-3fce-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>2e45c2c4-ae22-32f1-0000-000000000000</groupId>
+                        <id>f15436f0-1322-39d0-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <processors>
+                    <id>04c2bea6-8179-3242-0000-000000000000</id>
+                    <parentGroupId>2e45c2c4-ae22-32f1-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>56.0</x>
+                        <y>312.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0-SNAPSHOT</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Hostname</key>
+<value>
+    <name>Hostname</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Port</key>
+<value>
+    <name>Port</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Username</key>
+<value>
+    <name>Username</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Password</key>
+<value>
+    <name>Password</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Remote Path</key>
+<value>
+    <name>Remote Path</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Create Directory</key>
+<value>
+    <name>Create Directory</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Batch Size</key>
+<value>
+    <name>Batch Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Connection Timeout</key>
+<value>
+    <name>Connection Timeout</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Data Timeout</key>
+<value>
+    <name>Data Timeout</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Conflict Resolution</key>
+<value>
+    <name>Conflict Resolution</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Dot Rename</key>
+<value>
+    <name>Dot Rename</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Temporary Filename</key>
+<value>
+    <name>Temporary Filename</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Transfer Mode</key>
+<value>
+    <name>Transfer Mode</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Connection Mode</key>
+<value>
+    <name>Connection Mode</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Reject Zero-Byte Files</key>
+<value>
+    <name>Reject Zero-Byte Files</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Last Modified Time</key>
+<value>
+    <name>Last Modified Time</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Permissions</key>
+<value>
+    <name>Permissions</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Use Compression</key>
+<value>
+    <name>Use Compression</name>
+</value>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+    <name>proxy-configuration-service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Type</key>
+<value>
+    <name>Proxy Type</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Host</key>
+<value>
+    <name>Proxy Host</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Port</key>
+<value>
+    <name>Proxy Port</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Http Proxy Username</key>
+<value>
+    <name>Http Proxy Username</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Http Proxy Password</key>
+<value>
+    <name>Http Proxy Password</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Internal Buffer Size</key>
+<value>
+    <name>Internal Buffer Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>ftp-use-utf8</key>
+<value>
+    <name>ftp-use-utf8</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Hostname</key>
+<value>ftp.mbdealerdigital.com</value>
+                            </entry>
+                            <entry>
+<key>Port</key>
+<value>21</value>
+                            </entry>
+                            <entry>
+<key>Username</key>
+<value>mbus-ecommerce</value>
+                            </entry>
+                            <entry>
+<key>Password</key>
+                            </entry>
+                            <entry>
+<key>Remote Path</key>
+<value>/Inventory</value>
+                            </entry>
+                            <entry>
+<key>Create Directory</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Batch Size</key>
+<value>500</value>
+                            </entry>
+                            <entry>
+<key>Connection Timeout</key>
+<value>30 sec</value>
+                            </entry>
+                            <entry>
+<key>Data Timeout</key>
+<value>30 sec</value>
+                            </entry>
+                            <entry>
+<key>Conflict Resolution</key>
+<value>NONE</value>
+                            </entry>
+                            <entry>
+<key>Dot Rename</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>Temporary Filename</key>
+                            </entry>
+                            <entry>
+<key>Transfer Mode</key>
+<value>Binary</value>
+                            </entry>
+                            <entry>
+<key>Connection Mode</key>
+<value>Passive</value>
+                            </entry>
+                            <entry>
+<key>Reject Zero-Byte Files</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>Last Modified Time</key>
+                            </entry>
+                            <entry>
+<key>Permissions</key>
+                            </entry>
+                            <entry>
+<key>Use Compression</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+                            </entry>
+                            <entry>
+<key>Proxy Type</key>
+<value>DIRECT</value>
+                            </entry>
+                            <entry>
+<key>Proxy Host</key>
+                            </entry>
+                            <entry>
+<key>Proxy Port</key>
+                            </entry>
+                            <entry>
+<key>Http Proxy Username</key>
+                            </entry>
+                            <entry>
+<key>Http Proxy Password</key>
+                            </entry>
+                            <entry>
+<key>Internal Buffer Size</key>
+<value>16KB</value>
+                            </entry>
+                            <entry>
+<key>ftp-use-utf8</key>
+<value>false</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>PutFTP</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>reject</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.PutFTP</type>
+                </processors>
+                <processors>
+                    <id>13a2c412-e4f0-3e7c-0000-000000000000</id>
+                    <parentGroupId>2e45c2c4-ae22-32f1-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>504.0</x>
+                        <y>-312.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0-SNAPSHOT</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>File Size</key>
+<value>
+    <name>File Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Batch Size</key>
+<value>
+    <name>Batch Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Data Format</key>
+<value>
+    <name>Data Format</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Unique FlowFiles</key>
+<value>
+    <name>Unique FlowFiles</name>
+</value>
+                            </entry>
+                            <entry>
+<key>generate-ff-custom-text</key>
+<value>
+    <name>generate-ff-custom-text</name>
+</value>
+                            </entry>
+                            <entry>
+<key>character-set</key>
+<value>
+    <name>character-set</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>File Size</key>
+<value>0B</value>
+                            </entry>
+                            <entry>
+<key>Batch Size</key>
+<value>1</value>
+                            </entry>
+                            <entry>
+<key>Data Format</key>
+<value>Text</value>
+                            </entry>
+                            <entry>
+<key>Unique FlowFiles</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>generate-ff-custom-text</key>
+<value>{
+  "vin": "WDDJK7EA9FF032045",
+  "stockNumber": "MP2300",
+  "baumusterCode": "",
+  "classInfo": {
+    "code": "SL",
+    "description": {
+      "en": "SL",
+      "fr": ""
+    }
+  },
+  "modelInfo": {
+    "code": "SL63",
+    "description": {
+      "en": "AMG SL 63",
+      "fr": ""
+    }
+  },
+  "modelDescription": "AMG SL 63",
+  "modelYear": "2015",
+  "classBodyStyle": {
+    "en": "SL Roadster",
+    "fr": ""
+  },
+  "bodyStyle": "COUP/RDST",
+  "mileage": "28216",
+  "mileageUnit": "miles",
+  "msrp": "72786",
+  "msrpUnit": "USD",
+  "dealerPrice": "72786",
+  "dealerPriceUnit": "USD",
+  "fuelType": "Gasoline",
+  "transmission": "Automatic",
+  "image": {
+    "imageUrl": [
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_1.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_2.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_3.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_4.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_5.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_6.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_7.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_8.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_9.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_10.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_11.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_12.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_13.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_14.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_15.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_16.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_17.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_18.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_19.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_20.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_21.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_22.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_23.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_24.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_25.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_26.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_27.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_28.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_29.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_30.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_31.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_32.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_33.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_34.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_35.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_36.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_37.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_38.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_39.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_40.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_41.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_42.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_43.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_44.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_45.jpg"
+    ]
+  },
+  "vdpUrl": {
+    "en": "http://www.knauzcontinentalautos.com/catcher.esl?vehicleId=89423c4f0a0e0a171983e9bd54734532\t368763",
+    "fr": ""
+  },
+  "dseOptin": false,
+  "hasHomeDelivery": false,
+  "headerLabel": {
+    "en": "2015 AMG SL 63",
+    "fr": ""
+  },
+  "descriptionLabel": {
+    "en": "",
+    "fr": ""
+  },
+  "comments": {
+    "en": "Recent Arrival! 2015 Mercedes-Benz SL-Class SL 63 AMG� Black 5.5L V8 Direct-Injection BiTurbo 7-Speed Automatic RWD Original MSRP when new $169,025, designo� Black Piano Lacquer Trim, AMG� Track Pace, AMG� Performance Suspension, DINAMICA Headliner - Black, Black w/Nappa Leather Upholstery, 19'/20' AMG� 10-Spoke Forged (Black) Wheels, Active Blind Spot Assist, Active Lane Keeping Assist, Active Multicontour Seats w/Massage, AMG� Performance Steering Wheel, AMG� Premium Leather Upholstery, Auto-leveling suspension, Bang Olufsen BeoSound Premium Sound System, Brake assist, Convertible HardTop, Convertible roof wind blocker, DISTRONIC PLUS� w/Pre-Safe Brake, Driver Assistance Package, Electronic Stability Control, Exterior Parking Camera Rear, Garage door transmitter: Homelink, Heated Active Ventilated Front Seats, Heated front seats, High intensity discharge headlights: Bi-Xenon, iPod/MP3 Media Interface, MAGIC SKY CONTROL�, Navigation system: COMAND, Premium audio system: COMAND, Radio: COMAND System w/Navigation, Red Painted Brake Calipers, SIRIUSXM Satellite Radio, Ventilated front seats. Serving The Chicagoland Area Since 1934. Complimentary loaner vehicles available, Complimentary Vehicle washes. Pick-up and delivery available for service (within designated areas). Certified Collision Center. Reviews: * If the $85,000 base price of a 2015 Mercedes-Benz SL400 doesn't scare you off, you'll love the power, cutting- edge technology, impeccable craftsmanship and prestige of owning one of the most iconic Mercedes-Benz 2-seaters ever built. What else do you need? Source: KBB.com * Effortless acceleration impeccably trimmed and relatively spacious interior retractable glass-roof hardtop standard features galore relaxed ride capable handling. Source: Edmunds * The sophisticated body structure of the SL-Class is instantly recognizable yet startlingly fresh. From the upright grille with its central Star, the powerful contours of the long hood sweep past the cockpit into an aggressively contoured tail. A power retractable hardtop folds into the trunk and is triggered by a single button on the console. Occupants enjoy an expansive view of the sky through a heat-reflecting transparent panel. LED daytime running lamps and taillamps also come with the SL-Class. Lavished in soft, smooth exclusive leather, the cabin keeps its two occupants feeling coddled, connected, and captivated. The driver-seat features 12-way power adjustable seats with memory and lumbar support. Furthermore, the seat heating function will take the chill out of even the coldest day. Separate left and right temperature controls allow the driver and passenger to enjoy personalized comfort. The SL-Class features various engines, available at different packages, to suit your needs. All trims feature paddle shifters, allowing you to manually upshift and downshift the automatic transmission. A fuel-saving new ECO Start/Stop system automatically shuts off the engine at stoplights and other idle situations. Standard Torque Vectoring Brake technology provides additional control and precision in turns, via targeted rear-wheel braking. A suite of standard air bags offers advanced protection. Driver and passenger knee air bags supplement the dual-stage front air bags. The NECK PRO head restraints protect you in the event of a rear impact exceeding a preset threshold. Finally, Bi-Xenon headlamps help deliver greater visibility than halogen headlamps because their brighter, whiter light is much closer to natural daylight. Source: The Manufacturer Summary",
+    "fr": ""
+  },
+  "demoVehicle": "",
+  "usedCarIndicator": "Y",
+  "isCertified": "Y",
+  "isHistoryReport": "false",
+  "historyReportUrl": "",
+  "appearance": {
+    "interiorColor": "",
+    "interiorColorName": {
+      "en": "Black Nappa Leather",
+      "fr": ""
+    },
+    "metaColorInterior": "",
+    "exteriorColor": "",
+    "exteriorColorName": {
+      "en": "Black",
+      "fr": ""
+    },
+    "metaColorExterior": "Black"
+  },
+  "accessory": {
+    "comfort": {
+      "en": [
+        "KEYLESS-GO  with HANDS-FREE ACCESS",
+        "PARKTRONIC with Active Parking Assist",
+        "Retractable Panorama Roof",
+        "Rearview Camera",
+        "Ambient Lighting",
+        "Dual-Zone Automatic Climate Control",
+        "AIRSCARF  Ventilated Headrests",
+        "Power Wind Blocker",
+        "Heated and Ventilated Front Seats",
+        "Active Multicontour Front Seats with Massage",
+        "Power-Folding Mirrors",
+        "Garage Door Opener",
+        "Driver's Side and Interior Auto-Dimming Mirrors",
+        "MAGIC VISION CONTROL  (Dynamic &amp; Heated Wiper System)",
+        "COMAND  System with Navigation",
+        "CD/DVD Audio/Video Player",
+        "Navigation Map Updates included for 3 years",
+        "Media Interface",
+        "Bluetooth  Connectivity",
+        "harman/kardon LOGIC7  Surround Sound System",
+        "FrontBass ",
+        "mbrace  - w/ MB Apps",
+        "w/ trial period by Verizon Telematics"
+      ]
+    },
+    "safety": {
+      "en": [
+        "New Vehicle 4-Year/50,000 Mile Warranty",
+        "24-Hour Roadside Assistance Program",
+        "ATTENTION ASSIST ",
+        "PRE-SAFE  Predictive Occupant-Protection System",
+        "Bi-Xenon Headlights w/ Active Curve Illumination",
+        "Adaptive Highbeam Assist",
+        "LED Daytime Running Lights and Tail Lights",
+        "AMG  3-Stage Electronic Stability Control (ESP )",
+        "ADAPTIVE BRAKE Technology",
+        "Anti-lock Braking System (ABS)",
+        "Brake Assist System (BAS )",
+        "Advanced Airbag Protection System"
+      ]
+    },
+    "performance": {
+      "en": [
+        "5.5 Liter AMG  V-8 Engine with Direct Injection",
+        "577 Horsepower",
+        "664 lb-ft Torque",
+        "7-Speed AMG SPEEDSHIFT MCT  Transmission w/Shift Paddles",
+        "AMG  Limited Slip Rear Differential",
+        "19-Inch AMG  Wheels",
+        "Summer Performance Tires",
+        "Active Body Control (ABC ) Suspension System",
+        "ECO Start/Stop System"
+      ]
+    },
+    "packageCodeList": "",
+    "packages": [],
+    "optionsCodeList": "U70,W69,255,281,412,486,61U,767,811,997,23P,233,237,238",
+    "options": [
+      {
+        "code": "U70",
+        "description": {
+          "en": "Red Painted Brake Calipers",
+          "fr": ""
+        }
+      },
+      {
+        "code": "W69",
+        "description": {
+          "en": "designo Black Piano Lacquer Trim",
+          "fr": ""
+        }
+      },
+      {
+        "code": "255",
+        "description": {
+          "en": "AMG Performance Media",
+          "fr": ""
+        }
+      },
+      {
+        "code": "281",
+        "description": {
+          "en": "AMG Performance Steering Wheel",
+          "fr": ""
+        }
+      },
+      {
+        "code": "412",
+        "description": {
+          "en": "MAGIC SKY CONTROL",
+          "fr": ""
+        }
+      },
+      {
+        "code": "486",
+        "description": {
+          "en": "AMG Performance Suspension",
+          "fr": ""
+        }
+      },
+      {
+        "code": "61U",
+        "description": {
+          "en": "DINAMICA Headliner - Black",
+          "fr": ""
+        }
+      },
+      {
+        "code": "767",
+        "description": {
+          "en": "19\"/20\" AMG 10-Spoke Forged Wheel (Black)",
+          "fr": ""
+        }
+      },
+      {
+        "code": "811",
+        "description": {
+          "en": "Bang &amp; Olufsen BeoSound Sound System",
+          "fr": ""
+        }
+      },
+      {
+        "code": "997",
+        "description": {
+          "en": "Driver Assistance Package",
+          "fr": ""
+        }
+      },
+      {
+        "code": "23P",
+        "description": {
+          "en": "Driver Assistance Package Code",
+          "fr": ""
+        }
+      },
+      {
+        "code": "233",
+        "description": {
+          "en": "DISTRONIC PLUS with PRE-SAFE Brake",
+          "fr": ""
+        }
+      },
+      {
+        "code": "237",
+        "description": {
+          "en": "Active Blind Spot Assist",
+          "fr": ""
+        }
+      },
+      {
+        "code": "238",
+        "description": {
+          "en": "Active Lane Keeping Assist",
+          "fr": ""
+        }
+      }
+    ]
+  }
+}</value>
+                            </entry>
+                            <entry>
+<key>character-set</key>
+<value>UTF-8</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>1 day</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>GenerateFlowFile</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.GenerateFlowFile</type>
+                </processors>
+                <processors>
+                    <id>27d0d501-3180-356b-0000-000000000000</id>
+                    <parentGroupId>2e45c2c4-ae22-32f1-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>-568.0</x>
+                        <y>616.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0-SNAPSHOT</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Log Level</key>
+<value>
+    <name>Log Level</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Log Payload</key>
+<value>
+    <name>Log Payload</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Log</key>
+<value>
+    <name>Attributes to Log</name>
+</value>
+                            </entry>
+                            <entry>
+<key>attributes-to-log-regex</key>
+<value>
+    <name>attributes-to-log-regex</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Ignore</key>
+<value>
+    <name>Attributes to Ignore</name>
+</value>
+                            </entry>
+                            <entry>
+<key>attributes-to-ignore-regex</key>
+<value>
+    <name>attributes-to-ignore-regex</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Log prefix</key>
+<value>
+    <name>Log prefix</name>
+</value>
+                            </entry>
+                            <entry>
+<key>character-set</key>
+<value>
+    <name>character-set</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Log Level</key>
+<value>info</value>
+                            </entry>
+                            <entry>
+<key>Log Payload</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Log</key>
+                            </entry>
+                            <entry>
+<key>attributes-to-log-regex</key>
+<value>.*</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Ignore</key>
+                            </entry>
+                            <entry>
+<key>attributes-to-ignore-regex</key>
+                            </entry>
+                            <entry>
+<key>Log prefix</key>
+                            </entry>
+                            <entry>
+<key>character-set</key>
+<value>UTF-8</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>LogAttribute</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.LogAttribute</type>
+                </processors>
+                <processors>
+                    <id>4303260d-288c-3fce-0000-000000000000</id>
+                    <parentGroupId>2e45c2c4-ae22-32f1-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>469.52297533328874</x>
+                        <y>572.3601933179957</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0-SNAPSHOT</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Log Level</key>
+<value>
+    <name>Log Level</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Log Payload</key>
+<value>
+    <name>Log Payload</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Log</key>
+<value>
+    <name>Attributes to Log</name>
+</value>
+                            </entry>
+                            <entry>
+<key>attributes-to-log-regex</key>
+<value>
+    <name>attributes-to-log-regex</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Ignore</key>
+<value>
+    <name>Attributes to Ignore</name>
+</value>
+                            </entry>
+                            <entry>
+<key>attributes-to-ignore-regex</key>
+<value>
+    <name>attributes-to-ignore-regex</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Log prefix</key>
+<value>
+    <name>Log prefix</name>
+</value>
+                            </entry>
+                            <entry>
+<key>character-set</key>
+<value>
+    <name>character-set</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Log Level</key>
+<value>info</value>
+                            </entry>
+                            <entry>
+<key>Log Payload</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Log</key>
+                            </entry>
+                            <entry>
+<key>attributes-to-log-regex</key>
+<value>.*</value>
+                            </entry>
+                            <entry>
+<key>Attributes to Ignore</key>
+                            </entry>
+                            <entry>
+<key>attributes-to-ignore-regex</key>
+                            </entry>
+                            <entry>
+<key>Log prefix</key>
+                            </entry>
+                            <entry>
+<key>character-set</key>
+<value>UTF-8</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>LogAttribute</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.LogAttribute</type>
+                </processors>
+                <processors>
+                    <id>9ce25829-294e-3556-0000-000000000000</id>
+                    <parentGroupId>2e45c2c4-ae22-32f1-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>-152.0</x>
+                        <y>104.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-update-attribute-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0-SNAPSHOT</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Delete Attributes Expression</key>
+<value>
+    <name>Delete Attributes Expression</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Store State</key>
+<value>
+    <name>Store State</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Stateful Variables Initial Value</key>
+<value>
+    <name>Stateful Variables Initial Value</name>
+</value>
+                            </entry>
+                            <entry>
+<key>canonical-value-lookup-cache-size</key>
+<value>
+    <name>canonical-value-lookup-cache-size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>filename</key>
+<value>
+    <name>filename</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Delete Attributes Expression</key>
+                            </entry>
+                            <entry>
+<key>Store State</key>
+<value>Do not store state</value>
+                            </entry>
+                            <entry>
+<key>Stateful Variables Initial Value</key>
+                            </entry>
+                            <entry>
+<key>canonical-value-lookup-cache-size</key>
+<value>100</value>
+                            </entry>
+                            <entry>
+<key>filename</key>
+<value>test3.json</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>UpdateAttribute</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+                </processors>
+                <processors>
+                    <id>b9a1f634-b6eb-368b-0000-000000000000</id>
+                    <parentGroupId>2e45c2c4-ae22-32f1-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>520.0</x>
+                        <y>-128.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-update-attribute-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0-SNAPSHOT</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Delete Attributes Expression</key>
+<value>
+    <name>Delete Attributes Expression</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Store State</key>
+<value>
+    <name>Store State</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Stateful Variables Initial Value</key>
+<value>
+    <name>Stateful Variables Initial Value</name>
+</value>
+                            </entry>
+                            <entry>
+<key>canonical-value-lookup-cache-size</key>
+<value>
+    <name>canonical-value-lookup-cache-size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>filename</key>
+<value>
+    <name>filename</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Delete Attributes Expression</key>
+                            </entry>
+                            <entry>
+<key>Store State</key>
+<value>Do not store state</value>
+                            </entry>
+                            <entry>
+<key>Stateful Variables Initial Value</key>
+                            </entry>
+                            <entry>
+<key>canonical-value-lookup-cache-size</key>
+<value>100</value>
+                            </entry>
+                            <entry>
+<key>filename</key>
+<value>test.json</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>UpdateAttribute</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+                </processors>
+                <processors>
+                    <id>f15436f0-1322-39d0-0000-000000000000</id>
+                    <parentGroupId>2e45c2c4-ae22-32f1-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>504.0</x>
+                        <y>80.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-aws-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0-SNAPSHOT</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Object Key</key>
+<value>
+    <name>Object Key</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Bucket</key>
+<value>
+    <name>Bucket</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Content Type</key>
+<value>
+    <name>Content Type</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Access Key</key>
+<value>
+    <name>Access Key</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Secret Key</key>
+<value>
+    <name>Secret Key</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Credentials File</key>
+<value>
+    <name>Credentials File</name>
+</value>
+                            </entry>
+                            <entry>
+<key>AWS Credentials Provider service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderService</identifiesControllerService>
+    <name>AWS Credentials Provider service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>s3-object-tags-prefix</key>
+<value>
+    <name>s3-object-tags-prefix</name>
+</value>
+                            </entry>
+                            <entry>
+<key>s3-object-remove-tags-prefix</key>
+<value>
+    <name>s3-object-remove-tags-prefix</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Storage Class</key>
+<value>
+    <name>Storage Class</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Region</key>
+<value>
+    <name>Region</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Communications Timeout</key>
+<value>
+    <name>Communications Timeout</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Expiration Time Rule</key>
+<value>
+    <name>Expiration Time Rule</name>
+</value>
+                            </entry>
+                            <entry>
+<key>FullControl User List</key>
+<value>
+    <name>FullControl User List</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Read Permission User List</key>
+<value>
+    <name>Read Permission User List</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Write Permission User List</key>
+<value>
+    <name>Write Permission User List</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Read ACL User List</key>
+<value>
+    <name>Read ACL User List</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Write ACL User List</key>
+<value>
+    <name>Write ACL User List</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Owner</key>
+<value>
+    <name>Owner</name>
+</value>
+                            </entry>
+                            <entry>
+<key>canned-acl</key>
+<value>
+    <name>canned-acl</name>
+</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+    <name>SSL Context Service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Endpoint Override URL</key>
+<value>
+    <name>Endpoint Override URL</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Signer Override</key>
+<value>
+    <name>Signer Override</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Multipart Threshold</key>
+<value>
+    <name>Multipart Threshold</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Multipart Part Size</key>
+<value>
+    <name>Multipart Part Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Multipart Upload AgeOff Interval</key>
+<value>
+    <name>Multipart Upload AgeOff Interval</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Multipart Upload Max Age Threshold</key>
+<value>
+    <name>Multipart Upload Max Age Threshold</name>
+</value>
+                            </entry>
+                            <entry>
+<key>server-side-encryption</key>
+<value>
+    <name>server-side-encryption</name>
+</value>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+    <name>proxy-configuration-service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Host</key>
+<value>
+    <name>Proxy Host</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Proxy Host Port</key>
+<value>
+    <name>Proxy Host Port</name>
+</value>
+                            </entry>
+                            <entry>
+<key>proxy-user-name</key>
+<value>
+    <name>proxy-user-name</name>
+</value>
+                            </entry>
+                            <entry>
+<key>proxy-user-password</key>
+<value>
+    <name>proxy-user-password</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Object Key</key>
+<value>${filename}</value>
+                            </entry>
+                            <entry>
+<key>Bucket</key>
+<value>dcp-pie-batch</value>
+                            </entry>
+                            <entry>
+<key>Content Type</key>
+                            </entry>
+                            <entry>
+<key>Access Key</key>
+                            </entry>
+                            <entry>
+<key>Secret Key</key>
+                            </entry>
+                            <entry>
+<key>Credentials File</key>
+                            </entry>
+                            <entry>
+<key>AWS Credentials Provider service</key>
+                            </entry>
+                            <entry>
+<key>s3-object-tags-prefix</key>
+                            </entry>
+                            <entry>
+<key>s3-object-remove-tags-prefix</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Storage Class</key>
+<value>Standard</value>
+                            </entry>
+                            <entry>
+<key>Region</key>
+<value>us-east-1</value>
+                            </entry>
+                            <entry>
+<key>Communications Timeout</key>
+<value>30 secs</value>
+                            </entry>
+                            <entry>
+<key>Expiration Time Rule</key>
+                            </entry>
+                            <entry>
+<key>FullControl User List</key>
+<value>${s3.permissions.full.users}</value>
+                            </entry>
+                            <entry>
+<key>Read Permission User List</key>
+<value>${s3.permissions.read.users}</value>
+                            </entry>
+                            <entry>
+<key>Write Permission User List</key>
+<value>${s3.permissions.write.users}</value>
+                            </entry>
+                            <entry>
+<key>Read ACL User List</key>
+<value>${s3.permissions.readacl.users}</value>
+                            </entry>
+                            <entry>
+<key>Write ACL User List</key>
+<value>${s3.permissions.writeacl.users}</value>
+                            </entry>
+                            <entry>
+<key>Owner</key>
+<value>${s3.owner}</value>
+                            </entry>
+                            <entry>
+<key>canned-acl</key>
+<value>${s3.permissions.cannedacl}</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+                            </entry>
+                            <entry>
+<key>Endpoint Override URL</key>
+                            </entry>
+                            <entry>
+<key>Signer Override</key>
+<value>Default Signature</value>
+                            </entry>
+                            <entry>
+<key>Multipart Threshold</key>
+<value>5 GB</value>
+                            </entry>
+                            <entry>
+<key>Multipart Part Size</key>
+<value>5 GB</value>
+                            </entry>
+                            <entry>
+<key>Multipart Upload AgeOff Interval</key>
+<value>60 min</value>
+                            </entry>
+                            <entry>
+<key>Multipart Upload Max Age Threshold</key>
+<value>7 days</value>
+                            </entry>
+                            <entry>
+<key>server-side-encryption</key>
+<value>None</value>
+                            </entry>
+                            <entry>
+<key>proxy-configuration-service</key>
+                            </entry>
+                            <entry>
+<key>Proxy Host</key>
+                            </entry>
+                            <entry>
+<key>Proxy Host Port</key>
+                            </entry>
+                            <entry>
+<key>proxy-user-name</key>
+                            </entry>
+                            <entry>
+<key>proxy-user-password</key>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>PutS3Object</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.aws.s3.PutS3Object</type>
+                </processors>
+                <processors>
+                    <id>f5416037-f600-3ec1-0000-000000000000</id>
+                    <parentGroupId>2e45c2c4-ae22-32f1-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>-168.0</x>
+                        <y>-80.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.10.0-SNAPSHOT</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>File Size</key>
+<value>
+    <name>File Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Batch Size</key>
+<value>
+    <name>Batch Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Data Format</key>
+<value>
+    <name>Data Format</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Unique FlowFiles</key>
+<value>
+    <name>Unique FlowFiles</name>
+</value>
+                            </entry>
+                            <entry>
+<key>generate-ff-custom-text</key>
+<value>
+    <name>generate-ff-custom-text</name>
+</value>
+                            </entry>
+                            <entry>
+<key>character-set</key>
+<value>
+    <name>character-set</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>File Size</key>
+<value>0B</value>
+                            </entry>
+                            <entry>
+<key>Batch Size</key>
+<value>1</value>
+                            </entry>
+                            <entry>
+<key>Data Format</key>
+<value>Text</value>
+                            </entry>
+                            <entry>
+<key>Unique FlowFiles</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>generate-ff-custom-text</key>
+<value>{
+  "vin": "WDDJK7EA9FF032045",
+  "stockNumber": "MP2300",
+  "baumusterCode": "",
+  "classInfo": {
+    "code": "SL",
+    "description": {
+      "en": "SL",
+      "fr": ""
+    }
+  },
+  "modelInfo": {
+    "code": "SL63",
+    "description": {
+      "en": "AMG SL 63",
+      "fr": ""
+    }
+  },
+  "modelDescription": "AMG SL 63",
+  "modelYear": "2015",
+  "classBodyStyle": {
+    "en": "SL Roadster",
+    "fr": ""
+  },
+  "bodyStyle": "COUP/RDST",
+  "mileage": "28216",
+  "mileageUnit": "miles",
+  "msrp": "72786",
+  "msrpUnit": "USD",
+  "dealerPrice": "72786",
+  "dealerPriceUnit": "USD",
+  "fuelType": "Gasoline",
+  "transmission": "Automatic",
+  "image": {
+    "imageUrl": [
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_1.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_2.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_3.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_4.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_5.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_6.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_7.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_8.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_9.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_10.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_11.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_12.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_13.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_14.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_15.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_16.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_17.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_18.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_19.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_20.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_21.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_22.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_23.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_24.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_25.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_26.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_27.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_28.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_29.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_30.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_31.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_32.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_33.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_34.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_35.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_36.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_37.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_38.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_39.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_40.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_41.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_42.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_43.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_44.jpg",
+      "https://inventory-photos.mbdealerdigital.com/2020/01/WDDJK7EA9FF032045_45.jpg"
+    ]
+  },
+  "vdpUrl": {
+    "en": "http://www.knauzcontinentalautos.com/catcher.esl?vehicleId=89423c4f0a0e0a171983e9bd54734532\t368763",
+    "fr": ""
+  },
+  "dseOptin": false,
+  "hasHomeDelivery": false,
+  "headerLabel": {
+    "en": "2015 AMG SL 63",
+    "fr": ""
+  },
+  "descriptionLabel": {
+    "en": "",
+    "fr": ""
+  },
+  "comments": {
+    "en": "Recent Arrival! 2015 Mercedes-Benz SL-Class SL 63 AMG� Black 5.5L V8 Direct-Injection BiTurbo 7-Speed Automatic RWD Original MSRP when new $169,025, designo� Black Piano Lacquer Trim, AMG� Track Pace, AMG� Performance Suspension, DINAMICA Headliner - Black, Black w/Nappa Leather Upholstery, 19'/20' AMG� 10-Spoke Forged (Black) Wheels, Active Blind Spot Assist, Active Lane Keeping Assist, Active Multicontour Seats w/Massage, AMG� Performance Steering Wheel, AMG� Premium Leather Upholstery, Auto-leveling suspension, Bang Olufsen BeoSound Premium Sound System, Brake assist, Convertible HardTop, Convertible roof wind blocker, DISTRONIC PLUS� w/Pre-Safe Brake, Driver Assistance Package, Electronic Stability Control, Exterior Parking Camera Rear, Garage door transmitter: Homelink, Heated Active Ventilated Front Seats, Heated front seats, High intensity discharge headlights: Bi-Xenon, iPod/MP3 Media Interface, MAGIC SKY CONTROL�, Navigation system: COMAND, Premium audio system: COMAND, Radio: COMAND System w/Navigation, Red Painted Brake Calipers, SIRIUSXM Satellite Radio, Ventilated front seats. Serving The Chicagoland Area Since 1934. Complimentary loaner vehicles available, Complimentary Vehicle washes. Pick-up and delivery available for service (within designated areas). Certified Collision Center. Reviews: * If the $85,000 base price of a 2015 Mercedes-Benz SL400 doesn't scare you off, you'll love the power, cutting- edge technology, impeccable craftsmanship and prestige of owning one of the most iconic Mercedes-Benz 2-seaters ever built. What else do you need? Source: KBB.com * Effortless acceleration impeccably trimmed and relatively spacious interior retractable glass-roof hardtop standard features galore relaxed ride capable handling. Source: Edmunds * The sophisticated body structure of the SL-Class is instantly recognizable yet startlingly fresh. From the upright grille with its central Star, the powerful contours of the long hood sweep past the cockpit into an aggressively contoured tail. A power retractable hardtop folds into the trunk and is triggered by a single button on the console. Occupants enjoy an expansive view of the sky through a heat-reflecting transparent panel. LED daytime running lamps and taillamps also come with the SL-Class. Lavished in soft, smooth exclusive leather, the cabin keeps its two occupants feeling coddled, connected, and captivated. The driver-seat features 12-way power adjustable seats with memory and lumbar support. Furthermore, the seat heating function will take the chill out of even the coldest day. Separate left and right temperature controls allow the driver and passenger to enjoy personalized comfort. The SL-Class features various engines, available at different packages, to suit your needs. All trims feature paddle shifters, allowing you to manually upshift and downshift the automatic transmission. A fuel-saving new ECO Start/Stop system automatically shuts off the engine at stoplights and other idle situations. Standard Torque Vectoring Brake technology provides additional control and precision in turns, via targeted rear-wheel braking. A suite of standard air bags offers advanced protection. Driver and passenger knee air bags supplement the dual-stage front air bags. The NECK PRO head restraints protect you in the event of a rear impact exceeding a preset threshold. Finally, Bi-Xenon headlamps help deliver greater visibility than halogen headlamps because their brighter, whiter light is much closer to natural daylight. Source: The Manufacturer Summary",
+    "fr": ""
+  },
+  "demoVehicle": "",
+  "usedCarIndicator": "Y",
+  "isCertified": "Y",
+  "isHistoryReport": "false",
+  "historyReportUrl": "",
+  "appearance": {
+    "interiorColor": "",
+    "interiorColorName": {
+      "en": "Black Nappa Leather",
+      "fr": ""
+    },
+    "metaColorInterior": "",
+    "exteriorColor": "",
+    "exteriorColorName": {
+      "en": "Black",
+      "fr": ""
+    },
+    "metaColorExterior": "Black"
+  },
+  "accessory": {
+    "comfort": {
+      "en": [
+        "KEYLESS-GO  with HANDS-FREE ACCESS",
+        "PARKTRONIC with Active Parking Assist",
+        "Retractable Panorama Roof",
+        "Rearview Camera",
+        "Ambient Lighting",
+        "Dual-Zone Automatic Climate Control",
+        "AIRSCARF  Ventilated Headrests",
+        "Power Wind Blocker",
+        "Heated and Ventilated Front Seats",
+        "Active Multicontour Front Seats with Massage",
+        "Power-Folding Mirrors",
+        "Garage Door Opener",
+        "Driver's Side and Interior Auto-Dimming Mirrors",
+        "MAGIC VISION CONTROL  (Dynamic &amp; Heated Wiper System)",
+        "COMAND  System with Navigation",
+        "CD/DVD Audio/Video Player",
+        "Navigation Map Updates included for 3 years",
+        "Media Interface",
+        "Bluetooth  Connectivity",
+        "harman/kardon LOGIC7  Surround Sound System",
+        "FrontBass ",
+        "mbrace  - w/ MB Apps",
+        "w/ trial period by Verizon Telematics"
+      ]
+    },
+    "safety": {
+      "en": [
+        "New Vehicle 4-Year/50,000 Mile Warranty",
+        "24-Hour Roadside Assistance Program",
+        "ATTENTION ASSIST ",
+        "PRE-SAFE  Predictive Occupant-Protection System",
+        "Bi-Xenon Headlights w/ Active Curve Illumination",
+        "Adaptive Highbeam Assist",
+        "LED Daytime Running Lights and Tail Lights",
+        "AMG  3-Stage Electronic Stability Control (ESP )",
+        "ADAPTIVE BRAKE Technology",
+        "Anti-lock Braking System (ABS)",
+        "Brake Assist System (BAS )",
+        "Advanced Airbag Protection System"
+      ]
+    },
+    "performance": {
+      "en": [
+        "5.5 Liter AMG  V-8 Engine with Direct Injection",
+        "577 Horsepower",
+        "664 lb-ft Torque",
+        "7-Speed AMG SPEEDSHIFT MCT  Transmission w/Shift Paddles",
+        "AMG  Limited Slip Rear Differential",
+        "19-Inch AMG  Wheels",
+        "Summer Performance Tires",
+        "Active Body Control (ABC ) Suspension System",
+        "ECO Start/Stop System"
+      ]
+    },
+    "packageCodeList": "",
+    "packages": [],
+    "optionsCodeList": "U70,W69,255,281,412,486,61U,767,811,997,23P,233,237,238",
+    "options": [
+      {
+        "code": "U70",
+        "description": {
+          "en": "Red Painted Brake Calipers",
+          "fr": ""
+        }
+      },
+      {
+        "code": "W69",
+        "description": {
+          "en": "designo Black Piano Lacquer Trim",
+          "fr": ""
+        }
+      },
+      {
+        "code": "255",
+        "description": {
+          "en": "AMG Performance Media",
+          "fr": ""
+        }
+      },
+      {
+        "code": "281",
+        "description": {
+          "en": "AMG Performance Steering Wheel",
+          "fr": ""
+        }
+      },
+      {
+        "code": "412",
+        "description": {
+          "en": "MAGIC SKY CONTROL",
+          "fr": ""
+        }
+      },
+      {
+        "code": "486",
+        "description": {
+          "en": "AMG Performance Suspension",
+          "fr": ""
+        }
+      },
+      {
+        "code": "61U",
+        "description": {
+          "en": "DINAMICA Headliner - Black",
+          "fr": ""
+        }
+      },
+      {
+        "code": "767",
+        "description": {
+          "en": "19\"/20\" AMG 10-Spoke Forged Wheel (Black)",
+          "fr": ""
+        }
+      },
+      {
+        "code": "811",
+        "description": {
+          "en": "Bang &amp; Olufsen BeoSound Sound System",
+          "fr": ""
+        }
+      },
+      {
+        "code": "997",
+        "description": {
+          "en": "Driver Assistance Package",
+          "fr": ""
+        }
+      },
+      {
+        "code": "23P",
+        "description": {
+          "en": "Driver Assistance Package Code",
+          "fr": ""
+        }
+      },
+      {
+        "code": "233",
+        "description": {
+          "en": "DISTRONIC PLUS with PRE-SAFE Brake",
+          "fr": ""
+        }
+      },
+      {
+        "code": "237",
+        "description": {
+          "en": "Active Blind Spot Assist",
+          "fr": ""
+        }
+      },
+      {
+        "code": "238",
+        "description": {
+          "en": "Active Lane Keeping Assist",
+          "fr": ""
+        }
+      }
+    ]
+  }
+}</value>
+                            </entry>
+                            <entry>
+<key>character-set</key>
+<value>UTF-8</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>1 day</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>GenerateFlowFile</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.GenerateFlowFile</type>
+                </processors>
+            </contents>
+            <name>FTP-S3</name>
+            <variables/>
+        </processGroups>
+    </snippet>
+    <timestamp>02/11/2020 01:34:07 UTC</timestamp>
+</template>
