@@ -1,0 +1,199 @@
+{
+  "name": "MyClass",
+  "type": "record",
+  "namespace": "com.acme.avro",
+  "fields": [
+    {
+      "name": "productCharacteristics",
+        "type": ["null",{"type":"array",
+        "items": {
+          "name": "productCharacteristics_record",
+          "type": "record",
+          "fields": [
+            {
+              "name": "value",
+              "type": {
+                "type": "array",
+                "items": {
+                  "name": "value_record",
+                  "type": "record",
+                  "fields": [
+                    {"name": "value","type": "string"},
+                    {"name": "languageCode","type": "string"}
+                  ]
+                }
+              }
+            },
+            {"name": "code","type": "string"},
+            {"name": "type","type": "string"}
+          ]
+        }
+      }]
+    },
+    {
+      "name": "productEquipments",
+       "type": ["null",{"type":"array",
+         "items": {
+          "name": "productEquipments_record",
+          "type": "record",
+          "fields": [
+            {
+              "name": "name",
+              "type": {
+                "type": "array",
+                "items": {
+                  "name": "name_record",
+                  "type": "record",
+                  "fields": [
+                    {"name": "value","type": "string"},
+                    {"name": "languageCode","type": "string"}
+                  ]
+                }
+              }
+            },
+            {"name": "parentPack","type": ["null","string"]}
+          ]
+        }
+      }]
+    },
+    {
+      "name": "name",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "name_record2",
+          "type": "record",
+          "fields": [
+            {"name": "value","type": "string"},
+            {"name": "languageCode","type": "string"}
+          ]
+        }
+      }
+    },
+    {
+      "name": "description",
+        "type": ["null",{"type":"array",
+        "items": {
+          "name": "description_record",
+          "type": "record",
+          "fields": [
+            {"name": "value","type": "string"},
+            {"name": "languageCode","type": "string"}
+          ]
+        }
+      }]
+    },
+    {
+      "name": "model",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "model_record",
+          "type": "record",
+          "fields": [
+            {"name": "value","type": "string"},
+            {"name": "languageCode","type": "string"}
+          ]
+        }
+      }
+    },
+    {"name": "modelId","type": "string"},
+    {
+      "name": "modelDesignation",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "modelDesignation_record",
+          "type": "record",
+          "fields": [
+            {"name": "value","type": "string"},
+            {"name": "languageCode","type": "string"}
+          ]
+        }
+      }
+    },
+    {"name": "bodyType","type": "string"},
+    {"name": "classId","type": ["null","string"]},
+    {"name": "elink","type": "string"},
+    {"name": "code","type": "string"},
+    {"name": "vin","type": "string"},
+    {
+      "name": "listPrice",
+      "type": {
+        "name": "listPrice",
+        "type": "record",
+        "fields": [
+          {"name": "gross","type": "string"},
+          {"name": "currencyCode","type": "string"}
+        ]
+      }
+    },
+    {
+      "name": "reservePrice",
+      "type": ["null",{
+        "name": "reservePrice",
+        "type": "record",
+        "fields": [
+          {"name": "gross","type": "string"},
+          {"name": "currencyCode","type": "string"}
+        ]
+      }]
+    },
+    {"name": "gearBox","type": "string"},
+    {
+      "name": "mileage",
+      "type": {
+        "type": "record", "name": "mileage",
+        "fields": [
+          {  "name": "value", "type": "int" },
+          {  "name": "unit", "type": "string" }
+        ]
+      }
+    },
+    {"name": "year","type": "int"},
+    {"name": "carfaxUrl","type": ["null","string"]},
+    {"name": "carfaxExists","type": ["null","string"]},
+    {"name": "stockId","type": ["null","string"]},
+    {"name": "deliveryOptions","type": ["null","string"],"default" : null},
+    {"name": "dealerId","type": "string"},
+    {"name": "pre","type": "string"},
+    {
+      "name": "images",
+        "type": { "type": "array",
+        "items": {
+          "name": "images_record",
+          "type": "record",
+          "fields": [
+            {"name": "url","type": "string"},
+            {"name": "type","type": ["null","string"]},
+            {"name": "transparent","type": ["null","boolean"]},
+            {"name": "thumbnail","type": ["null","boolean"]}
+          ]
+        }
+      }
+    },
+    {
+      "name": "comments",
+      "type": ["null",{"type":"array",
+        "items": {
+          "name": "comments_record",
+          "type": "record",
+          "fields": [
+            {"name": "value","type": ["null","string"]},
+            {"name": "languageCode","type": ["null","string"]}
+          ]
+        }
+      }]
+    },
+    {"name": "reservable","type": "boolean"},
+    {"name": "productSource","type": "string"},
+    {"name": "localEmissionAndConsumptionData","type": "string"},
+    {"name": "brand","type": "string"},
+    {"name": "powerInKw","type": "string"},
+    {"name": "productType","type": "string"},
+    {"name": "market","type": ["null","string"]},
+    {"name": "stockCategory","type": "string"},
+    {"name": "engineSizeInCcm","type": ["null","string"]},
+    {"name": "baumuster","type": "string"}
+  ]
+}
