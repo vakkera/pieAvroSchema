@@ -1,0 +1,168 @@
+[{
+    "operation": "shift",
+    "spec": {
+      "vin": [
+        "code",
+        "vin"
+      ],
+      "dealerPrice": "listPrice.gross",
+      "msrpUnit": "listPrice.currencyCode",
+      "transmission": "gearBox",
+      "mileage": "mileage.value",
+      "modelYear": "year",
+      "deliveryOptions": "deliveryOptions",
+      "historyReportUrl": "carfaxUrl",
+      "isHistoryReport": "carfaxExists",
+      "accessory": {
+        "safety": {
+          "en": {
+            "*": {
+              "@": "productEquipments[0].[&1].name[0].value",
+              "#en": "productEquipments[0].[&1].name[0].languageCode",
+              "$2": "productEquipments[0].[&1].parentPack"
+            }
+          }
+        },
+        "comfort": {
+          "en": {
+            "*": {
+              "@": "productEquipments[1].[&1].name[0].value",
+              "#en": "productEquipments[1].[&1].name[0].languageCode",
+              "$2": "productEquipments[1].[&1].parentPack"
+            }
+          }
+        },
+        "performance": {
+          "en": {
+            "*": {
+              "@": "productEquipments[2].[&1].name[0].value",
+              "#en": "productEquipments[2].[&1].name[0].languageCode",
+              "$2": "productEquipments[2].[&1].parentPack"
+            }
+          }
+        },
+        "options": {
+          "*": {
+            "description": {
+              "en": "productEquipments[3].[&2].name[0].value",
+              "#en": "productEquipments[3].[&2].name[0].languageCode",
+              "#option": "productEquipments[3].[&2].parentPack"
+            }
+          }
+        }
+      },
+      "fuelType": "productCharacteristics[0].value[0].value",
+      "@appearance.interiorColorName.en": "productCharacteristics[1].value[0].value",
+      "@appearance.exteriorColorName.en": "productCharacteristics[4].value[0].value",
+      "@dealerPrice": "productCharacteristics[5].value[0].value",
+      "@comments.en": "comments[0].value",
+      "@appearance.metaColorExterior": {
+        "Black": { "#BLK": "productCharacteristics[3].value[0].value" },
+        "Blue": { "#BLU": "productCharacteristics[3].value[0].value" },
+        "Brown": { "#BWN": "productCharacteristics[3].value[0].value" },
+        "Green": { "#GRN": "productCharacteristics[3].value[0].value" },
+        "Grey": { "#GRY": "productCharacteristics[3].value[0].value" },
+        "Beige": { "#OTR": "productCharacteristics[3].value[0].value" },
+        "Red": { "#RED": "productCharacteristics[3].value[0].value" },
+        "Silver": { "#SLV": "productCharacteristics[3].value[0].value" },
+        "White": { "#WHT": "productCharacteristics[3].value[0].value" },
+        "Yellow": { "#YLW": "productCharacteristics[3].value[0].value" }
+      },
+      "@fuelType": {
+        "Gasoline": { "#G": "productCharacteristics[6].value[0].value" },
+        "Hybrid": { "#H": "productCharacteristics[6].value[0].value" },
+        "Diesel": { "#D": "productCharacteristics[6].value[0].value" },
+        "Electric": { "#E": "productCharacteristics[6].value[0].value" }
+      },
+      "@mileageUnit": {
+        "miles": { "#MI": "mileage.unit" },
+        "KM": { "#KM": "mileage.unit" }
+      },
+      "stockNumber": "stockId",
+      "dealerCode": "dealerId",
+      "isCertified": "pre",
+      "@modelInfo.code": [
+        "model[].value",
+        "modelId",
+        "modelDesignation[0].value"
+      ],
+      "@modelInfo.description.en": "name[].value",
+      "@headerLabel.en": "description[].value",
+      "reservable": "reservable",
+      "@calcReservePrice.gross": "reservePrice.gross",
+      "@calcReservePrice.currencyCode": "reservePrice.currencyCode",
+      "@bodyStyle": "bodyType",
+      "bodyStyle": "bodyStyleId",
+      "@classInfo.code": "classId",
+      "@vdpUrl.en": "elink",
+      "image": { "imageUrl": { "*": "images[&0].url" } }
+    }
+  },
+  {
+    "operation": "default",
+    "spec": {
+      "baumuster": "000000",
+      "productSource": "MBUSA",
+      "brand": "MERCEDES_BENZ",
+      "productType": "NAFTAVehicle",
+      "market": "US",
+      "engineSizeInCcm": "",
+      "powerInKw": "",
+      "stockCategory": "USED",
+      "localEmissionAndConsumptionData": "{}",
+      "name[]": { "0": { "languageCode": "en" } },
+      "model[]": { "0": { "languageCode": "en" } },
+      "modelDesignation[]": { "0": { "languageCode": "en" } },
+      "description[]": { "0": { "languageCode": "en" } },
+      "images[]": {
+        "*": {
+          "type": "others",
+          "thumbnail": true,
+          "transparent": true
+        }
+      },
+      "productCharacteristics[]": {
+        "0": { "code": "fuelType", "type": "StringProductCharacteristic", "value[]": { "0": { "languageCode": "en" } } },
+        "1": { "code": "interiorColor", "type": "StringProductCharacteristic", "value[]": { "0": { "languageCode": "en" } } },
+        "2": { "code": "metaColorInterior", "type": "StringProductCharacteristic", "value[]": { "0": { "languageCode": "en", "value": "OTR" } } },
+        "3": { "code": "metaColorExterior", "type": "StringProductCharacteristic", "value[]": { "0": { "languageCode": "en" } } },
+        "4": { "code": "exteriorColor", "type": "StringProductCharacteristic", "value[]": { "0": { "languageCode": "en" } } },
+        "5": { "code": "Packages", "type": "StringProductCharacteristic", "value[]": { "0": { "languageCode": "en" } } },
+        "6": { "code": "fuelTypeCode", "type": "StringProductCharacteristic", "value[]": { "0": { "languageCode": "en" } } }
+      },
+      "comments[]": { "0": { "value": "", "languageCode": "en" } }
+    },
+    "productEquipments": {
+      "*": {
+        "name": {
+          "*": {
+            "value": {
+              "0": {
+                "0": "productEquipments[0].[&1].name[0].value"
+              },
+              "1": {
+                "1": "productEquipments[1].[&1].name[0].value"
+              },
+              "2": {
+                "2": "productEquipments[2].[&1].name[0].value"
+              },
+              "3": {
+                "3": "productEquipments[3].[&2].name[0].value"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "modify-overwrite-beta",
+    "spec": {
+      "mileage": {
+        "value": "=toInteger"
+      },
+      "gearBox": "=toUpper",
+      "year": "=toInteger"
+    }
+  }
+]
