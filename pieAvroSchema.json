@@ -18,7 +18,7 @@
                   "name": "value_record",
                   "type": "record",
                   "fields": [
-                    {"name": "value","type": "string"},
+                    {"name": "value","type": "string","default" : ""},
                     {"name": "languageCode","type": "string"}
                   ]
                 }
@@ -45,7 +45,7 @@
                   "name": "name_record",
                   "type": "record",
                   "fields": [
-                    {"name": "value","type": "string"},
+                    {"name": "value","type": "string","default" : ""},
                     {"name": "languageCode","type": "string"}
                   ]
                 }
@@ -154,7 +154,7 @@
     {"name": "carfaxUrl","type": ["null","string"]},
     {"name": "carfaxExists","type": ["null","string"]},
     {"name": "stockId","type": ["null","string"]},
-    {"name": "deliveryOptions","type": ["null","string"],"default" : null},
+    {"name": "deliveryOptions","type": "string","default" : ""},
     {"name": "dealerId","type": "string"},
     {"name": "pre","type": "string"},
     {
