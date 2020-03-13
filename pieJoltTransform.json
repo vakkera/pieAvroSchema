@@ -93,6 +93,7 @@
       "@calcReservePrice.currencyCode": "reservePrice.currencyCode",
       "@bodyStyle": "bodyType",
       "bodyStyle": "bodyStyleId",
+      "@classBodyStyle.en": "classBodyStyle",
       "@classInfo.code": "classId",
       "@vdpUrl.en": "elink",
       "image": { "imageUrl": { "*": "images[&0].url" } }
